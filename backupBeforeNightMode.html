@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebDev
+        
+    </title>
+    <link rel="icon" href="favico.ico" type="image">
+    <link rel="stylesheet" href="web4.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+</head>
+<body>
+    
+    <div class="banner">
+        <video autoplay muted loop id="myVideo">
+            <source src="cinematic_Trim.mp4" type="video/mp4">
+        </video>
+        
+        <div class="navbar">
+            
+            <ul>    
+                <li><a href="#"><b>WHO WE ARE</b></a></li>
+                <li><a href="#"><b>WORK WITH US</b></a></li>
+                <li><a href="#"><b>NEWS</b></a></li>
+            </ul>
+        </div>
+            <!-- <span class="line"> -->
+                <div id="welcome">WELCOME</div>
+                <div id="to">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TO</div>
+                <div id="valo">VALORANT&nbsp</div>
+            <!-- </span> -->
+            <div class="play">PLAY FREE</div>
+        
+        <div class="rnavbar">
+            <img src="moon.png" id="icon">
+            <input type="search" placeholder="search.." class="search">
+
+            <button onclick="hide()" id="sign"><b>SIGN IN</b></button>
+            <span class="login-form" id="log" style="display: none;">
+            <ul id="login-list">
+                <li><input class="txt" id="user" type="txt" placeholder="Username"></li>
+                <br><br>
+                <li><input class="txt" id="pass" type="password" placeholder="Password"></li>
+                <br>
+                <!-- <p><input type="checkbox">Show Password</p> -->
+                <br>
+                <li><input class="bt" type="button" value="Login"></li>
+                <br><br>
+                <a href="#">&nbsp&nbsp&nbsp&nbspForgot Password</a><br>
+                <br>
+                <a href="#">Don't have an account?</a>
+            </ul>
+            
+           </span>
+
+        </div>
+        
+    </div>
+
+    <div class="fl">
+    <div class="secPAGE">
+            <h1>WHAT'S HAPPENING?</h1>
+            
+            
+            <div id="left" class="leftCard" onmouseover="vidStart(this)" onmouseout="vidStop(this)">
+                <h2>Aim Lab and Riot Headed to the Next Level</h2>
+                <video autoplay muted loop id="yoru">
+                    <source src="cinematic_Trim.mp4" type="video/mp4">
+                </video>
+                
+            </div>
+    </div>
+            <div class="fourdiv">
+            <button id="see">SEE MORE</button>
+            <div class="rightCard" id="card1"><h3>JETT</h3></div>
+            <div class="rightCard" id="card2"><h3>FADE</h3></div>
+            <div class="rightCard" id="card3"><h3>CHAMBER</h3></div>
+            <div class="rightCard" id="card4"><h3>ASTRA</h3></div>
+            </div>
+        </div>
+
+    <div class="body3">
+        <h1 id="our">Our Games</h1>
+        <div class="page3">
+             
+            <div class="boxes" id="box1"><section id="overlay"></section></div>
+            <div class="boxes" id="box2"><section id="overlay1"></section></div>
+            <div class="boxes" id="box3"><section id="overlay2"></section></div>
+            <div class="boxes" id="box4"><section id="overlay3"></section></div>
+            <div class="boxes" id="box5"><section id="overlay4"></section></div>
+            <div class="boxes" id="box6"><section id="overlay5"></section></div>
+            <div class="boxes" id="box7"><section id="overlay6"></section></div>
+            <div class="boxes" id="box8"><section id="overlay7"></section></div>
+            
+        </div>
+
+    </div>
+
+
+    <div class="endPage">
+
+        <div class="Lpage">
+            
+            
+            <ul id="w">
+                <h3>Stuff We Do</h3>
+                <li><a href="#">Updates</a></li>
+                <li><a href="#">Amazon Gaming</a></li>
+                <li><a href="#">Forums</a></li>
+            </ul>
+
+            <ul id="q">
+                <h3>About</h3>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+            <ul id="e">
+                <h3>Contact Us</h3>
+                <li><a href="#"><img id="insta" src="insta.png"></a></li>
+                <li><a href="#"><img id="insta" src="facebook.png"></a></li>
+                <li><a href="#"><img id="insta" src="linkedin.png"></a></li>
+                
+            </ul>
+
+            <a href="#"><h4>To The Top⬆️</h4></a>
+        
+        </div>
+
+        <div class="Rpage">
+                <h3>OUR LOCATION</h3> 
+                <div id="map"></div>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

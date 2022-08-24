@@ -1,0 +1,758 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(bg1.jpg); */
+    background-size: cover;
+    background-position: center;
+    overflow:hidden;
+    
+}
+
+.play{
+    top: 470px;
+    left: 270px;
+    position: absolute;
+    font-size: 18px;
+    font-family: fantasy;
+    border: dashed 1px var(--primary-color);
+    padding: 6px 10px 6px 10px;
+    background-clip: content-box;
+    background-color: red ;
+    opacity: 0.9;
+    /* height: 60px  60px; */
+    
+}
+
+.play:hover{
+    background-color: grey;
+    transition: 1s ;
+    cursor: crosshair;
+    transform: scale(180%);
+    transition: linear;
+}
+
+
+
+#welcome{
+    animation: color-change 2.4s infinite, slideTitle1 3s ;
+    /* animation: opa 4s linear,color-change 2.5s linear infinite; */
+    position: absolute;
+    font-size: 80px;
+    top: 200px;
+    font-family: valorant;
+    color: var(--primary-color);
+    cursor: pointer;
+    left: 100px;
+    
+} 
+
+
+#to{
+    animation: color-change 2.8s infinite , slideTitle2 3s ;
+    /* animation: opa 4s linear,color-change 2.8s linear infinite; */
+    position: absolute;
+    font-size: 80px;
+    top: 280px;
+    font-family: valorant;
+    color: var(--primary-color);
+    cursor: pointer;
+    left: 100px; 
+}
+#valo{
+    animation: color-change 3.2s infinite, slideTitle3 3s ;
+    /* animation: opa 4s linear,color-change 3s linear infinite; */
+    position: absolute;
+    font-size: 80px;
+    top: 360px;
+    font-family: valorant;
+    color: var(--primary-color);
+    cursor: pointer;
+    left: 100px;
+    /* border-bottom: 4px solid white; */
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(45deg, var(--primary-color),rgb(234, 16, 38)) 1;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    
+}
+
+/* #valo{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  } */
+
+#valo{
+    color: #fff;
+    text-shadow:
+        0 0 7px rgb(255, 22, 22),
+        0 0 10px rgb(241, 19, 19),
+        0 0 21px rgb(255, 0, 0),
+        0 0 42px rgb(255, 255, 255),
+        0 0 82px rgb(255, 255, 255),
+        0 0 92px rgb(247, 255, 252),
+        0 0 102px rgb(255, 255, 255),
+        0 0 151px rgb(226, 255, 245);
+  }
+
+
+@keyframes color-change {
+    0% { color: var(--secondary-color);}
+    50% { color: var(--primary-color);}
+    100% { color: var(--secondary-color);}
+}
+
+/* @keyframes opa{
+    0% {opacity: 0;}
+    25% {opacity: 0.2;}
+    50% {opacity: 0.6;}
+    75% {opacity: 0.8;}
+    100% {opacity: 1;}
+} */
+
+@keyframes slideTitle1{
+    0%{top: 50px;}
+    100% { top: 200px; }
+}
+
+@keyframes slideTitle2{
+    0%{top: 50px;}
+    100% { top: 280px; }
+}
+
+@keyframes slideTitle3{
+    0%{top: 50px;}
+    100% { top: 360px; }
+}
+
+@font-face {
+    font-family: valorant;
+    src: url("Valorant Font.ttf");
+}
+
+.navbar{
+    
+    justify-self: start;
+    padding-top: 6px;
+    width:40%;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+.navbar ul li a{
+    color: var(--primary-color);
+    text-decoration: none;
+    position: relative;
+    left: 80px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover{
+    color: red;
+    /* text-decoration: underline;     */
+    background: white;
+    padding-left: 10px;
+} 
+
+.rnavbar{
+    justify-self: end;
+    padding-top: 6px;
+    width:40%;
+    position: absolute;
+    right: 80px;
+    text-align: end;
+    top: 20px;
+    border-left: auto;
+    
+}
+
+/*.secPage{
+    /* background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(bg.jpg); */
+    /* height: auto;
+    width: 50%; */
+    /* background-size: cover;
+    background-position: center; */
+    /* border: 2px solid brown; }*/
+
+
+
+
+.secPAGE h1{
+    width: 50%;
+    margin: 50px;
+    margin-left: 90px;
+}
+
+
+
+
+#see{
+    width: 15%;
+    margin:0px auto 10%;
+    /* border: 2px solid blue; */
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 390px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+    padding: 7px;
+    border: 2px solid var(--primary-color);
+    
+} 
+
+.leftCard{
+    height:60vh;
+    width: 50vw;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 20px;
+    background-image: url(allAGENTS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+
+
+#yoru{
+    height:60vh;
+    width: 50vw;
+    padding-bottom: 25px;
+}
+
+
+.leftCard h2{
+    position: relative;
+    top: 350px;
+    left: -130px;
+    
+}
+
+.rightCard{
+    
+    height: 15vh;
+    background-image: linear-gradient(to right,rgba(255,255,255,0.2),rgba(255,255,255,0.1));
+    width: 80%;
+    margin-top: 2%;
+    border-radius: 20px;
+    color: white;
+    
+
+}
+
+.rightCard:hover{
+    
+    cursor: pointer;
+    border: 3px solid grey ;
+    
+}
+
+.rightCard h3{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    
+}
+
+
+#sign{
+    
+    /* border:3px solid red; */
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: cursive;
+    background-color: rgb(243, 28, 28);
+}
+#sign:hover{
+    background-color: var(--secondary-color);
+    color: red;
+    border: 1px solid red;
+    
+}
+
+.fourdiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.fl{
+    display: flex;
+    background-color: var(--secondary-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: var(--primary-color);
+}
+
+.search{
+    /* background-color: transparent; */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    /* background-color: var(--primary-color); */
+    font-size: 12px!important;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: 0;
+    margin-right: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+#card1{
+    background-image: url(jett.jpg);
+    background-repeat: no-repeat;
+    width: 30%;
+    padding-left: 5px;
+}
+
+
+#card2{
+    background-image: url(fade.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    padding-left: 5px;
+}
+#card3{
+    background-image: url(chamber4Extended.png);
+    background-size: cover;
+    width: 75%;
+    padding-left: 5px;
+}
+#card4{
+    background-image: url(astra1.jpg);
+    /* background-repeat: no-repeat; */
+    width: 90%;
+    padding-left: 5px;
+}
+
+/* .page3{
+    background-color: rgba(40, 39, 37, 0.89);
+    color: white;
+    
+}
+
+.body3{
+    
+    border: 2px solid red;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 40vh;
+    border: 2px solid grey;
+} */
+.body3{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 60px 60px;
+}
+
+.page3{
+    display: grid;
+    width: 90%;
+    margin: 30px auto;
+    /* border: 2px solid red; */
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    color: var(--primary-color);
+}
+
+.boxes{
+    
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#box1{
+    /* background-color: red; */
+    background-image: url(lol.jpg);
+    /* background-image: url(lolBANNER.jpg); */
+    grid-column: 1/3;
+    height: 300px;
+    border-radius: 20px;
+    background-position-x: -45px;
+}
+#box2{
+    /* background-color: pink; */
+    background-image: url(val-card-bg-1800-fade.jpg);
+    background-position-x: -20px;
+    grid-column: 3/6;
+    height: 300px;
+    border-radius: 20px;
+    
+}
+#box3{
+    /* background-color: yellow; */
+    background-image: url(tft-card-bg-1800.jpg);
+    height: 200px;
+    width: 400px;
+    grid-column: 1/2;
+    border-radius: 20px;
+
+    
+}
+#box4{
+    /* background-color: brown; */
+    background-image: url(lol-wildrift-productimage.png);
+    grid-column: 2/4;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position-y: -40px;
+    /* background-position-x: -20px; */
+
+    
+}
+#box5{
+    /* background-color: blue; */
+    background-image: url(legends-of-runeterra-productimage.png);
+    grid-column: 4/6;
+    height: 200px;
+    border-radius: 20px;
+    /* background-position-x: -60px; */
+    width: 400px;
+    
+}
+#box6{
+    /* background-color: purple; */
+    background-image: url(ruined-king-productimage.png);
+    grid-column: 1/2;
+    height: 200px;
+    border-radius: 20px;
+    background-position-x: -40px;
+}
+#box7{
+    /* background-color: orange; */
+    background-image: url(hextetch-mayhem-card-bg-1800.jpg);
+    grid-column: 2/4;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position-x: -40px;
+}
+#box8{
+    /* background-color: grey; */
+    background-image: url(convrgence-productimage.png);
+    grid-column: 4/6;
+    height: 200px;
+    border-radius: 20px;
+    background-position-x: -40px;
+}
+
+#overlay{
+    background-image: url(lolBANNER.png);
+    height: 80px;
+    width: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay1{
+    background-image: url(valoCard.png);
+    height: 120px;
+    width: 165px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    
+}
+
+#overlay2{
+    background-image: url(tacticsCard.png);
+    height: 120px;
+    width: 165px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#overlay3{
+    background-image: url(lolRiftCard.png);
+    height: 100px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#overlay4{
+    background-image: url(runeterraCard.png);
+    height: 60px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+#overlay5{
+    background-image: url(ruinedCard.png);
+    height: 90px;
+    width: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+#overlay6{
+    background-image: url(hexCard.png);
+    height: 80px;
+    width: 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+#overlay7{
+    background-image: url(convCard.png);
+    height: 40px;
+    width: 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+
+.boxes:hover{
+    cursor: pointer;
+    border: 3px solid grey ;
+    
+}
+
+
+
+
+
+
+.endPage{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100%;
+    
+}
+
+.Lpage{
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+    /* display: inline-block; */
+    background-color: var(--secondary-color);
+    position: absolute;
+    font-size: 20px;
+}
+
+#w{
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    
+}
+
+#w li{
+    margin-top: 15px;
+    padding: 10px;
+    list-style: square;
+}
+
+#q{
+    position: absolute;
+    right: 35%;
+    top: 25%;
+}
+#q li{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#e{
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    
+}
+#e li{
+    margin-top: 10px;
+    padding: 8px;
+    list-style: none;
+    
+}
+
+#insta{
+    height: 25px;
+    width: 25px;
+    margin-left: 30px;
+    
+}
+
+.Lpage li a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.Rpage{
+    position: absolute;
+    background-color: var(--secondary-color);
+    width: 50%;
+    height: 50%;
+    right: 0%;
+}
+
+::-webkit-scrollbar{
+    width: 1em;
+    
+}
+::-webkit-scrollbar-track{
+    background: var(--primary-color);
+    /* border-radius: 100vw; */
+    /* margin-block: .5em; */
+}
+::-webkit-scrollbar-thumb{
+    /* background: rgb(234, 16, 52); */
+    background: linear-gradient(var(--secondary-color),red);
+    border: .15em solid var(--primary-color);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(100, 4, 5);
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    margin-right: 23px;
+    margin-bottom:-11px; ;
+}
+
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#000000;
+    --tertiary-color: rgb(40, 37, 37);
+}
+
+/* :root{
+    --primary-color:#000000;
+    --secondary-color:#edf2fc;
+    --tertiary-color: rgb(40, 37, 37);
+    
+} */
+
+.light-theme{
+    --primary-color:#000000;
+    --secondary-color:#edf2fc;
+    /* --tertiary-color: rgb(40, 37, 37);
+    --fourth-color: none; */
+}
+
+#our{
+    color: white;
+}
+
+#map{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    right: 70px;
+    top: 40px;
+    
+}
+
+.Rpage h3{
+    position: absolute;
+    left: 250px;
+    margin-top: 10px;
+}
+
+.Lpage h4{
+    position: absolute;
+    bottom:20px;
+    cursor: pointer;
+    left: 280px;
+    
+}
+
+#login-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    cursor: pointer;
+    /* background-color: var(--secondary-color) ; */
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+  
+  backdrop-filter: blur(5px);
+    /* background-image: linear-gradient(var(--primary-color,var(--secondary-color))); */
+    margin-top: 20px;
+    padding: 10px;
+    width: 320px;
+    position: absolute;
+    right: 0%;
+    border-radius: 20px;
+    height: 190px;
+    border: 3px solid var(--primary-color);
+}
+
+
+#login-list li{
+    position: absolute;
+    left: 85px;
+    cursor: pointer;
+}
+
+#login-list a{
+    position: absolute;
+    left: 85px;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.bt{
+    position: absolute;
+    left: 60px;
+    cursor: pointer;
+}
+
